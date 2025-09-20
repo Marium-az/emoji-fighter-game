@@ -1,74 +1,64 @@
-#header-el{
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    text-align: center;
-    font-size: 60;
-    color: darkgoldenrod;
+body {
+  margin: 0;
+  font-family: 'Trebuchet MS', Arial, sans-serif;
+  text-align: center;
+  background-image: linear-gradient(to bottom right, cornflowerblue, yellow);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
 }
 
-div{
-    text-align: center;
+#header-el {
+  font-size: 2.5rem;
+  color: darkgoldenrod;
+  margin-bottom: 20px;
 }
 
-#pick-btn{
-    padding: 20px;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    position: fixed;
-    left: 50%;
-    transform: translate(-50%);
-    bottom: 350px;
-    cursor: pointer;
-    color: aliceblue;
-    background-color: darkgoldenrod;
-    border: 0;
-    border-radius: 5%;
+#stage {
+  font-size: 3rem;
+  margin: 20px 0;
+  min-height: 3rem;
 }
 
-#reset-btn{
-    padding: 20px;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    position: fixed;
-    left: 50%;
-    transform: translate(-50%);
-    bottom: 50px;
-    cursor: pointer;
-    color: aliceblue;
-    background-color: darkgoldenrod;
-    border: 0;
-    border-radius: 5%;
+.reslt {
+  color: darkgoldenrod;
+  margin: 10px 0;
+  font-size: 1.2rem;
 }
 
-#stage{
-    font-size: 50px;
+#scoreboard {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  max-width: 400px;
+  margin: 15px auto;
+  font-size: 1rem;
+  color: darkgoldenrod;
 }
 
-.reslt{
-    bottom: 270px;
-    position: fixed;
-    left: 50%;
-    transform: translate(-50%);
-    color: darkgoldenrod;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+button {
+  padding: 15px 25px;
+  margin: 10px;
+  font-size: 1rem;
+  cursor: pointer;
+  color: aliceblue;
+  background-color: darkgoldenrod;
+  border: none;
+  border-radius: 8px;
+  width: 80%;
+  max-width: 250px;
 }
 
-#score{
-    bottom: 220px;
-    position: fixed;
-    left: 50%;
-    transform: translate(-50%);
-    font-size: 21;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-}
-
-#scoreboard{
-    position: fixed;
-    left: 50%;
-    transform: translate(-50%);
-    bottom: 120;
-    font-size: 20;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    color: darkgoldenrod;
-}
-
-body{
-    background-image: linear-gradient(to bottom right, cornflowerblue, yellow);
+@media (max-width: 600px) {
+  #header-el {
+    font-size: 2rem;
+  }
+  #stage {
+    font-size: 2.2rem;
+  }
+  button {
+    font-size: 0.9rem;
+    padding: 12px 18px;
+  }
 }
